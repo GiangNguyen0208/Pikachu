@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pikachu Game</title>
+    <link rel="stylesheet" href="asset/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="board-game">
+        <div id="game"></div>
+        <div id="game-dialog">
+            <p>Chọn mức độ của trò chơi:</p>
+            <select id="game-level">
+                <option value="1">Mức độ 1</option>
+                <option value="2">Mức độ 2</option>
+                <option value="3">Mức độ 3</option>
+                <option value="4">Mức độ 4</option>
+                <option value="5">Mức độ 5</option>
+                <option value="6">Mức độ 6</option>
+            </select>
+            <button onclick="startGame()">Bắt đầu</button>
+        </div>
+    </div>
+    <div class="info-game">
+<!--        <p>Thời gian</p>-->
+        <div class="status">
+            <span class="txtstatus">Bàn:</span>
+            <span id="level">1</span>
+            <span class="txtstatus">Lượt đổi:</span>
+            <span id="blood">10</span>
+            <span class="txtstatus">Điểm:</span>
+            <span id="score">0</span>
+        </div>
+        <div class="change_level">
+            <span class="txtstatus">Đổi level</span>
+            <div class="col">
+                <button class="lev" onclick="el.level1()">Cấp độ 1</button>
+                <button class="lev" onclick="el.level2()">Cấp độ 2</button>
+                <button class="lev" onclick="el.level3()">Cấp độ 3</button>
+            </div>
+            <div class="col">
+                <button class="lev" onclick="el.level4()">Cấp độ 4</button>
+                <button class="lev" onclick="el.level5()">Cấp độ 5</button>
+                <button class="lev" onclick="el.level6()">Cấp độ 6</button>
+            </div>
+        </div>
+<!--        <div id="timer-bar-container">-->
+<!--            <div id="timer-bar"></div>-->
+<!--            <p id="timer-percent"></p>-->
+<!--        </div>-->
+        <div class="display-level">
+
+        </div>
+
+        <p id="timer-text"></p>
+    </div>
+</div>
+<!--<script src="./asset/js/jquery-3.6.3.min.js"></script>-->
+<!--<script src="./asset/js/jhCore-1.54.js"></script>-->
+<script src="./asset/js/controller.js"></script>
+<script src="./asset/js/thuatToan.js"></script>
+</body>
+</html>
